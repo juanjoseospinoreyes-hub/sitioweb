@@ -1,0 +1,128 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1350&q=80')
+              no-repeat center center/cover;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px 0;
+  color: #333;
+}
+
+.factura {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  padding: 30px 40px;
+  width: 90%;
+  max-width: 800px;
+  backdrop-filter: blur(5px);
+}
+
+.factura h2 {
+  text-align: center;
+  color: #8B0000;
+  margin-bottom: 5px;
+}
+
+.factura .fecha {
+  text-align: center;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.datos-cliente h3,
+.detalles h3 {
+  color: #8B0000;
+  margin-bottom: 10px;
+}
+
+.datos-cliente p {
+  margin: 5px 0;
+  font-size: 15px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #8B0000;
+  color: white;
+  text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.total th {
+  background-color: #8B0000;
+  color: white;
+  font-size: 16px;
+}
+
+.acciones {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.btn {
+  background-color: #8B0000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #b33a3a;
+}
+
+.btn.volver {
+  background-color: #3498db;
+}
+
+.btn.volver:hover {
+  background-color: #2980b9;
+}
+
+.btn.nuevo {
+  background-color: #27ae60;
+}
+
+.btn.nuevo:hover {
+  background-color: #2ecc71;
+}
+
+@media print {
+  body {
+    background: white;
+  }
+  .btn, .acciones {
+    display: none;
+  }
+  .factura {
+    box-shadow: none;
+  }
+}

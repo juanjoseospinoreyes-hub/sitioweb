@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración - Restaurante</title>
+    <link rel="stylesheet" href="css/menu_admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Contenedor para agrupar usuario y botón de regresar */
+        .user-back {
+            display: flex;
+            align-items: center;
+        }
+
+        /* Botón de regresar usando el mismo estilo de los iconos del header */
+        .back-icon i {
+            font-size: 1.4rem;
+            color: #2c3e50;
+            cursor: pointer;
+        }
+        .back-icon i:hover {
+            color: #1a242f; /* un tono ligeramente más oscuro al pasar el mouse */
+        }
+        .back-icon {
+            text-decoration: none;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="menu-icon"><i class="fa-solid fa-bars"></i></div>
+        <h1>Restaurante Reyes & Sabores by Juan</h1>
+        <div class="user-back">
+            <!-- Botón de regresar solo con el icono -->
+            <a href="formularios/indexusuario.php" class="back-icon"><i class="fa-solid fa-arrow-left"></i></a>
+            <div class="user-icon"><i class="fa-solid fa-user"></i></div>
+        </div>
+    </header>
+
+    <main class="menu-container">
+        <div class="menu-card" onclick="window.location.href='formularios/producto.php'">
+            <i class="fa-solid fa-box icon"></i>
+            <h2>Gestión de productos</h2>
+        </div>
+
+        <div class="menu-card" onclick="window.location.href='formularios/inventario.php'">
+            <i class="fa-solid fa-warehouse icon"></i>
+            <h2>Inventario</h2>
+        </div>
+
+        <div class="menu-card" onclick="window.location.href='formularios/categoria.php'">
+            <i class="fa-solid fa-folder icon"></i>
+            <h2>Gestión de categorías</h2>
+        </div>
+    </main>
+
+</body>
+</html>
